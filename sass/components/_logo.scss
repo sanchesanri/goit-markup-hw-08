@@ -1,0 +1,10 @@
+
+  
+.footer-logo {
+ @include fontStyle(26px, 700, 1.19);
+  }
+  
+.footer-logo,
+.footer-address {
+    color: var(--white-color);
+  }

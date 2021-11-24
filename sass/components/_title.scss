@@ -1,0 +1,30 @@
+.title {
+    color: var(--primary-text-color);
+    @include fontStyle(14px, 700, 1.14);
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+%__title{
+  @include fontStyle(36px, 700, 1.16);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.team,
+.section__title,
+.clients__title {
+ @extend %__title
+}
+  
+.team__title {
+  @include fontStyle(16px, 500, 1.18);
+  text-transform: none;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+// .team__title {
+//   margin-bottom: 10px;
+//   text-align: center;
+// }

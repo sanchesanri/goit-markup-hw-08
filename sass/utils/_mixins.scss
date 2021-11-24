@@ -1,0 +1,15 @@
+@mixin fontStyle ($fontz: 14px, $fontw: 700, $lineHei: 1.14, $letterSp: 0.03em ) {
+    font-size: $fontz;
+    font-weight: $fontw;
+    line-height: $lineHei;
+    letter-spacing: $letterSp;
+    
+  }
+  
+  @mixin centeredFlex ($type: flex, $justify: center, $align: center){
+    display: $type;
+    justify-content: $justify;
+    align-items: $align;
+  }
+
+  

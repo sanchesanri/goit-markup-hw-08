@@ -1,0 +1,47 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    background-color: var(--primary-bg-color);
+    font-family: "Roboto", sans-serif;
+    color: var(--primary-text-color);
+    /* padding-top: 80px; */
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  ul {
+    margin: 0;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  
+  
+  /*обязательно*/
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  span {
+    color: var(--accent-text-color);
+  }

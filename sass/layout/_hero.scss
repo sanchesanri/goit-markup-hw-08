@@ -1,0 +1,56 @@
+.hero {
+    height: 600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--white-color);
+    text-align: center;
+    padding: 200px 0;
+    background-color: #c4c4c4;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/bg-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+.hero__button {
+    color: var(--white-color);
+    padding: 10px 32px;
+    @include fontStyle(16px, 700, 1.85, 0.06em);
+    // font-weight: 700;
+    // font-size: 16px;
+    // line-height: 1.85;
+    // letter-spacing: 0.06em;
+    background-color: var(--accent-text-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    background-color: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  }
+  }
+  
+
+  
+.hero__title {
+  @include fontStyle(44px, 900, 1.36, 0.06em);
+    // font-weight: 900;
+    // font-size: 44px;
+    // line-height: 1.36;
+    // letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: var(--card-set-gup);
+  }
+  

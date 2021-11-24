@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+      integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body>
+    <header class="page-header">
+      <div class="container page-header__container">
+        <nav class="nav">
+          <a class="nav__logo link" href="./index.html"
+            ><span>Web</span>Studio</a
+          >
+
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="./index.html" class="link nav__link">Студия</a>
+            </li>
+            <li class="nav__item">
+              <a href="./portfolio.html" class="link nav__link--current nav__link"
+                >Портфолио</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#" class="link nav__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="address">
+          <li class="address__item">
+            <a class="address__link" href="mailto:info@devstudio.com">
+              <svg class="icon-nav" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="address__item">
+            <a class="address__link" href="tel:+380961111111"
+              ><svg class="icon-nav" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Портфолио -->
+    <main>
+      <section class="section">
+        <div class="container">
+          <!-- Спрятать H1 -->
+          <h1 class="visually-hidden">Портфолио</h1>
+          <ul class="filter">
+            <li class="filter__list">
+              <button class="button filter__button" type="button">Все</button>
+            </li>
+            <li class="filter__list">
+              <button class="button filter__button" type="button">
+                Веб-сайты
+              </button>
+            </li>
+            <li class="filter__list">
+              <button class="button filter__button" type="button">
+                Приложения
+              </button>
+            </li>
+            <li class="filter__list">
+              <button class="button filter__button" type="button">
+                Дизайн
+              </button>
+            </li>
+            <li class="filter__list">
+              <button class="button filter__button" type="button">
+                Маркетинг
+              </button>
+            </li>
+          </ul>
+
+          <!-- div images -->
+
+          <ul class="list-grid grid">
+            <li class="grid__item">
+              <div class="grid__box">
+                <a href="" class="grid__link">
+                  <div class="grid__box2">
+                    <img
+                      src="./images/технокряк.jpg"
+                      alt="веб-сайт технокряк"
+                      width="370"
+                      height="294"
+                    />
+                    <div class="grid__box3">
+                      <p class="text grid__text">
+                        Технокряк это современная площадка распространения
+                        коронавируса. Компании используют эту платформу для
+                        цифрового шпионажа и атак на защищённые сервера
+                        конкурентов.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="user-chois">
+                    <h2 class="title user-chois__title">Технокряк</h2>
+                    <p class="text user-chois__text">Веб-сайт</p>
+                  </div>
+                </a>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="grid__box">
+                <a href="" class="grid__link">
+                  <div class="grid__box2">
+                    <img
+                    src="./images/neworleanovsgoldenstar.jpg"
+                    alt="постер баскетбол"
+                    width="370"
+                    height="294"
+                  />
+                    <div class="grid__box3">
+                      <p class="text grid__text">
+                        Я в своем познании настолько преисполнился, что я как будто бы уже сто триллионов миллиардов лет проживаю на триллионах и триллионах таких же планет, как эта Земля, 
+                      </p>
+                    </div>
+                  </div>
+                  <div class="user-chois">
+                    <h2 class="title user-chois__title">
+                      Постер New Orlean vs Golden Star
+                    </h2>
+                    <p class="text user-chois__text">Дизайн</p>
+                  </div>
+                </a>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="grid__box">
+                <a href="" class="grid__link">
+                  
+                  <div class="grid__box2">
+                    <img
+                    src="./images/restoranseafood.jpg"
+                    alt="ресторан seafood"
+                    width="370"
+                    height="294"
+                  />
+                    <div class="grid__box3">
+                      <p class="text grid__text">
+                        мне этот мир абсолютно понятен, и я здесь ищу только одного - покоя, умиротворения и вот этой гармонии, от слияния с бесконечно вечным, от созерцания великого фрактального подобия и от вот этого замечательного всеединства существа,
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div class="user-chois">
+                    <h2 class="title user-chois__title">Ресторан Seafood</h2>
+                    <p class="text user-chois__text">Приложение</p>
+                  </div>
+                </a>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="grid__box">
+                <a href="" class="grid__link">
+                  
+                  <div class="grid__box2">
+                    <img
+                    src="./images/projectprime.jpg"
+                    alt="проект Prime"
+                    width="370"
+                    height="294"
+                  />
+                    <div class="grid__box3">
+                      <p class="text grid__text">
+                        бесконечно вечного, куда ни посмотри, хоть вглубь - бесконечно малое, хоть ввысь - бесконечное большое, понимаешь? А ты мне опять со своим вот этим, иди суетись дальше, это твоё распределение, это твой путь и твой горизонт познания и ощущения твоей природы,
+                      </p>
+                    </div>
+                  </div>                  
+                  <div class="user-chois">
+                    <h2 class="title user-chois__title">Проект Prime</h2>
+                    <p class="text user-chois__text">Маркетинг</p>
+                  </div>
+                </a>
+              </div>              
+            </li>
+
+            <li class="grid__item">
+              <div class="grid__box">
+                <a href="" class="grid__link">
+                
+                <div class="grid__box2">
+                  <img
+                  src="./images/projectboxes.jpg"
+                  alt="проект Boxes"
+                  width="370"
+                  height="294"
+                />
+                  <div class="grid__box3">
+                    <p class="text grid__text">
+                      он несоизмеримо мелок по сравнению с моим, понимаешь? Я как будто бы уже давно глубокий старец, бессмертный, ну или там уже почти бессмертный, который на этой планете от её самого зарождения, ещё когда только Солнце только-только сформировалось как звезда,
+                    </p>
+                  </div>
+                </div>
+                <div class="user-chois">
+                  <h2 class="title user-chois__title">Проект Boxes</h2>
+                  <p class="text user-chois__text">Приложение</p>
+                </div>
+              </a>
+            </div>             
+            </li>
+
+            <li class="grid__item">
+              <div class="grid__box">
+                <a href="" class="grid__link">
+                  
+                  <div class="grid__box2">
+                    <img
+                    src="./images/inspirationhasnoborders.jpg"
+                    alt="Inspiration has no Borders"
+                    width="370"
+                    height="294"
+                  />
+                    <div class="grid__box3">
+                      <p class="text grid__text">
+                        и вот это газопылевое облако, вот, после взрыва, Солнца, когда оно вспыхнуло, как звезда, начало формировать вот эти коацерваты, планеты, понимаешь, я на этой Земле уже как будто почти пять миллиардов лет живу и знаю её вдоль и поперёк этот весь мир, а ты мне какие-то... 
+                      </p>
+                    </div>
+                  </div>
+                  <div class="user-chois">
+                    <h2 class="title user-chois__title">Inspiration has no Borders</h2>
+                    <p class="text user-chois__text">Веб-сайт</p>
+                  </div>
+                </a>
+              </div>
+              
+            </li>
+
+            <li class="grid__item">
+              <div class="grid__box">
+                <a href="" class="grid__link">
+                
+                <div class="grid__box2">
+                  <img
+                  src="./images/editionlimitededition.jpg"
+                  alt="издание limited edition"
+                  width="370"
+                  height="294"
+                />
+                  <div class="grid__box3">
+                    <p class="text grid__text">
+                      мне не важно на твои тачки, на твои яхты, на твои квартиры, там, на твоё благо. Я был на этой планете бесконечным множеством, и круче Цезаря, и круче Гитлера, и круче всех великих, понимаешь, был, а где-то был конченым говном, ещё хуже,чем здесь. 
+                    </p>
+                  </div>
+                </div>
+                <div class="user-chois">
+                  <h2 class="title user-chois__title">Издание Limited Edition</h2>
+                  <p class="text user-chois__text">Дизайн</p>
+                </div>
+              </a>
+            </div>
+              
+            </li>
+
+            <li class="grid__item">
+              <div class="grid__box">
+                <a href="" class="grid__link">
+                
+                <div class="grid__box2">
+                  <img
+                  src="./images/projectlab.jpg"
+                  alt="проект LAB"
+                  width="370"
+                  height="294"
+                />
+                  <div class="grid__box3">
+                    <p class="text grid__text">
+                      Я множество этих состояний чувствую. Где-то я был больше подобен растению, где-то я больше был подобен птице, там, червю, где-то был просто сгусток камня, это всё есть душа, понимаешь?
+                    </p>
+                  </div>
+                </div>
+                <div class="user-chois">
+                  <h2 class="title user-chois__title">Проект LAB</h2>
+                  <p class="text user-chois__text">Маркетинг</p>
+                </div>
+              </a>
+            </div>
+              
+            </li>
+
+            <li class="grid__item">
+              <div class="grid__box">
+                <a href="" class="grid__link">
+                
+                <div class="grid__box2">
+                  <img
+                  src="./images/growingbusiness.jpg"
+                  alt="groving businnes"
+                  width="370"
+                  height="294"
+                />
+                  <div class="grid__box3">
+                    <p class="text grid__text">
+                      Она имеет грани подобия совершенно многообразные, бесконечное множество. Но тебе этого не понять, поэтому ты езжай себе , мы в этом мире как бы живем разными ощущениями и разными стремлениями, соответственно, разное наше и место, разное и наше распределение.
+                    </p>
+                  </div>
+                </div>
+                <div class="user-chois">
+                  <h2 class="title user-chois__title">Growing Business</h2>
+                  <p class="text user-chois__text">Приложение</p>
+                </div>
+              </a>
+            </div>
+              
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container container__footer">
+        <div class="footer__box-address">
+          <a class="footer-logo link" href="./index.html"
+            ><span>Web</span>Studio</a
+          >
+          <address class="footer-address">
+            <ul class="footer__list">
+              <li class="footer__item">
+                г. Киев, пр-т Леси Украинки, 26
+              </li>
+              <li class="footer__item">
+                <a href="mailto:info@example.com" class="link"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="footer__item">
+                <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer__box-social">
+          <h2 class="title footer__title">Присоединяйтесь</h2>
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a href="https://www.instagram.com/" class="footer__social-link">
+                <svg
+                  class="footer__social-icon"
+                  aria-label="instagrem"
+                  width="20"
+                  height="20"
+                >
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="footer__social-item">
+              <a href="https://twitter.com/" class="footer__social-link">
+                <svg
+                  class="footer__social-icon"
+                  aria-label="twitter"
+                  width="20"
+                  height="20"
+                >
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="footer__social-item">
+              <a href="https://www.facebook.com/" class="footer__social-link">
+                <svg
+                  class="footer__social-icon"
+                  aria-label="facebook"
+                  width="20"
+                  height="20"
+                >
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="footer__social-item">
+              <a href="https://www.linkedin.com/" class="footer__social-link">
+                <svg
+                  class="footer__social-icon"
+                  aria-label="linkedin"
+                  width="20"
+                  height="20"
+                >
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="footer-wrapper-form">
+          <b class="title footer-wrapper__text">Подпишитесь на рассылку</b>
+          <form class="footer-form">
+            <label class="footer-form__label">
+              <input 
+              name="mail" 
+              type="email"              
+              placeholder="my@mail.com" 
+              class="footer-form__input">
+            </label>
+
+            <button class="footer-form__button" type="submit">
+              Подписаться
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,119 @@
+.filter {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+  }
+  
+  .filter__list:not(:last-child) {
+    margin-right: 9px;
+  }
+  
+  .container-partfolio {
+    padding: 94px 0;
+  }
+  /* ----PORTFOLIO-container------- */
+  .list-grid{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: calc(-1 * var(--card-set-gup));
+    margin-top: calc(-1 * var(--card-set-gup));
+  }
+  
+  .grid__item {
+    max-width: 370px;
+    flex-basis: calc (100% / 3 - var(--card-set-gup));
+    margin-right: var(--card-set-gup);
+    margin-top: var(--card-set-gup);
+  }
+  
+    /* .grid__box {
+      position: relative;
+    } */
+  
+  .grid__link {
+    display: block;
+    border: 1px solid #eeeeee;
+  
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    box-shadow: 
+    0px 1px 1px rgba(0, 0, 0, 0.12), 
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16); 
+  }
+ }
+  
+  
+  .grid__box2 {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* --задали на ссылку для ховера, а не на картинку-- */
+  /* .grid__box2:hover::before {
+    opacity: 1;
+  } */
+  
+  .grid__box3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(33, 150, 243, 0.9);
+    padding: 24px;
+  
+    transform: translateY(100%);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .grid__link:hover .grid__box3 {
+    transform: translateY(0);
+  }
+  
+  .grid__link:hover .grid__text{
+    transform: translateY(0);
+  }
+  
+  .grid__text {
+    color: var(--white-color);
+    transform: translateY(100%);
+    transition: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+  
+    font-size: 18px;
+    /* opacity: 0; */
+  }
+  
+  .grid__link:hover .grid__text {
+    opacity: 1;
+  }
+  
+  .user-chois {
+    padding: 24px 20px;
+  }
+  
+  .user-chois__title {
+    font-size: 18px;
+    line-height: calc(30 / 18);
+    text-transform: none;
+  
+    margin-bottom: 4px;
+  }
+  
+  .user-chois__text {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+  }
+  
