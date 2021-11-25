@@ -1,14 +1,21 @@
-.page-header__container {
-  display: flex;
-  align-items: center;
+.page-header__container{
+    padding: 16px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.page-header {
-    /* position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10; */
-    background-color: var(--white-color);
-    border-bottom: 1px solid #ececec;
-  }
+// .page-header__container {
+//   display: flex;
+//   align-items: center;
+// }
+
+// .page-header {
+//     /* position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     z-index: 10; */
+//     background-color: var(--white-color);
+//     border-bottom: 1px solid #ececec;
+//   }

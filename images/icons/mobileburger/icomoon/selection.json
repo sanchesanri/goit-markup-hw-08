@@ -1,0 +1,95 @@
+{
+  "IcoMoonType": "selection",
+  "icons": [
+    {
+      "icon": {
+        "paths": [
+          "M204.8 375.475v-68.275h614.4v68.275h-614.4zM204.8 546.125h614.4v-68.25h-614.4v68.25zM204.8 716.8h614.4v-68.275h-614.4v68.275z"
+        ],
+        "attrs": [
+          {}
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "grid": 0,
+        "tags": [
+          "burger"
+        ]
+      },
+      "attrs": [
+        {}
+      ],
+      "properties": {
+        "order": 38,
+        "id": 1,
+        "name": "burger",
+        "prevSize": 32
+      },
+      "setIdx": 0,
+      "setId": 7,
+      "iconIdx": 0
+    },
+    {
+      "icon": {
+        "paths": [
+          "M759.475 329.728l-48.128-48.128-190.822 190.797-190.797-190.797-48.128 48.128 190.797 190.797-190.797 190.822 48.128 48.128 190.797-190.822 190.822 190.822 48.128-48.128-190.822-190.822 190.822-190.797z"
+        ],
+        "attrs": [
+          {}
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "grid": 0,
+        "tags": [
+          "closeburger"
+        ]
+      },
+      "attrs": [
+        {}
+      ],
+      "properties": {
+        "order": 39,
+        "id": 0,
+        "name": "closeburger",
+        "prevSize": 32
+      },
+      "setIdx": 0,
+      "setId": 7,
+      "iconIdx": 1
+    }
+  ],
+  "height": 1024,
+  "preferences": {
+    "showGlyphs": true,
+    "showQuickUse": true,
+    "showQuickUse2": true,
+    "showSVGs": true,
+    "fontPref": {
+      "prefix": "icon-",
+      "metadata": {
+        "fontFamily": "icomoon"
+      },
+      "metrics": {
+        "emSize": 1024,
+        "baseline": 6.25,
+        "whitespace": 50
+      },
+      "embed": false
+    },
+    "imagePref": {
+      "prefix": "icon-",
+      "png": true,
+      "useClassSelector": true,
+      "color": 0,
+      "bgColor": 16777215,
+      "classSelector": ".icon",
+      "name": "icomoon",
+      "height": 32,
+      "columns": 16,
+      "margin": 16
+    },
+    "historySize": 50,
+    "showCodes": true,
+    "gridSize": 16
+  }
+}

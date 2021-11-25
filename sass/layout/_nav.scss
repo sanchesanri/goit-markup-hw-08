@@ -1,82 +1,109 @@
-.nav__link {
-    color: var(--primary-text-color);
-  
-    @include fontStyle(14px, 500, 1.14, 00.02em);
-    // font-size: 14px;
-    // font-weight: 500;
-    // line-height: 1.14;
-    // letter-spacing: 0.02em;
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-  
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-    color: var(--accent-text-color);
-  }
-  }
-  
 
 
-.nav__link--current {
-    color: var(--accent-text-color);
-    position: relative;
-
-    &::after {
-      position: absolute;
-      bottom: -1px;
-    
-      content: "";
-      display: block;
-      width: 100%;
-      height: 4px;
-      background-color: var(--accent-text-color);
-      border-radius: 2px;
-    }
-  }
-  
 .nav__logo {
+    @include fontStyle(24px, 700, 1.16);
+    font-family: Raleway;
     color: var(--primary-text-color);
 
-    font-family: Raleway, sans-serif;
-    @include fontStyle(26px, 700, 1.19);
-    
-    
-    // font-family: Raleway, sans-serif; 
-    // font-size: 26px;
-    // font-weight: 700;
-    // line-height: 1.19;
-    // letter-spacing: 0.03em;
-  }  
-  
-  
+}
 
-  
-.nav__list {
-    display: flex;
-    align-items: center;
-  }
-  
-.nav__logo {
-    margin-right: 93px;
-  }
-  
-.nav {
-    display: flex;
-    align-items: center;
-  }
-  
-  
-.icon-nav {
+// START MENU BURGER
+.menu-button{
     padding: 0;
-    margin-right: 10px;
-    fill: currentColor;
-  }
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    line-height: 0;
+}
 
-.nav__item:not(:last-child) {
-    margin-right: 50px;
-  }
+.menu-button_icon{
+    width: 40px;
+    height: 40px; 
+}
+
+.menu-button .icon-cross{
+    display: none;
+}
+.menu-button.is-open .icon-cross{
+    display: block;
+}
+
+.menu-button.is-open .icon-menu{
+    display: none;
+}
+
+.nav__list{
+    display: none;
+}
+
+
+// .nav__link {
+//     color: var(--primary-text-color);
+  
+//     @include fontStyle(14px, 500, 1.14, 00.02em);
+//     display: block;
+//     padding-top: 32px;
+//     padding-bottom: 32px;
+  
+//     transition-property: color;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+//     &:hover,
+//     &:focus {
+//     color: var(--accent-text-color);
+//   }
+//   }
+  
+
+
+// .nav__link--current {
+//     color: var(--accent-text-color);
+//     position: relative;
+
+//     &::after {
+//       position: absolute;
+//       bottom: -1px;
+    
+//       content: "";
+//       display: block;
+//       width: 100%;
+//       height: 4px;
+//       background-color: var(--accent-text-color);
+//       border-radius: 2px;
+//     }
+//   }
+  
+
+//     font-family: Raleway, sans-serif;
+//     @include fontStyle(26px, 700, 1.19);
+    
+//   }  
+  
+  
+
+  
+// .nav__list {
+//     display: flex;
+//     align-items: center;
+//   }
+  
+// .nav__logo {
+//     margin-right: 93px;
+//   }
+  
+// .nav {
+//     display: flex;
+//     align-items: center;
+//   }
+  
+  
+// .icon-nav {
+//     padding: 0;
+//     margin-right: 10px;
+//     fill: currentColor;
+//   }
+
+// .nav__item:not(:last-child) {
+//     margin-right: 50px;
+//   }

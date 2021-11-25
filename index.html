@@ -45,6 +45,31 @@
           </ul>
         </nav>
 
+
+        <!-- START Mobile Menu -->
+        <div class="menu-container"
+        js-menu-container>
+          <button 
+        class="menu-button" 
+        type="button"
+        aria-expanded="false">
+              <svg class="menu-button_icon">
+                <use 
+                class="icon-menu"
+                js-open-menu
+                href="./images/icons.svg#icon-burger"></use>
+
+                <use 
+                class="icon-cross" 
+                js-close-menu
+                href="./images/icons.svg#icon-closeburger"></use>
+              </svg>
+              </button> 
+        </div>
+
+        
+          <!-- END Mobile Menu -->
+
         <ul class="address">
           <li class="address__item">
             <a class="address__link" href="mailto:info@devstudio.com"
@@ -64,6 +89,7 @@
           </li>
         </ul>
       </div>
+
     </header>
 
     <main>
@@ -609,5 +635,7 @@
     </div>
   </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    
   </body>
 </html>

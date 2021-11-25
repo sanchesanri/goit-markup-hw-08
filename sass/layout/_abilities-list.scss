@@ -1,30 +1,27 @@
-.abilities {
-    display: flex;
-  }
-.abilities__item {
-    width: 270px;
+// .abilities {
+//     display: flex;
+//   }
+// .abilities__item {
+//     width: 270px;
 
-    &:not(:last-child) {
-      margin-right: $cardSetGup;
-    }
-  }
+//     &:not(:last-child) {
+//       margin-right: $cardSetGup;
+//     }
+//   }
   
 
   
-.abilities__box {
+// .abilities__box {
     
-    width: 270px;
-    height: 120px;
-    @include centeredFlex ();
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
+//     width: 270px;
+//     height: 120px;
+//     @include centeredFlex ();
   
-    margin-bottom: 30px;
-    background-color: $fourthBgColor;
-    border-radius: 4px;
-  }
+//     margin-bottom: 30px;
+//     background-color: $fourthBgColor;
+//     border-radius: 4px;
+//   }
   
-.abilities__title {
-    margin-bottom: 10px;
-  }
+// .abilities__title {
+//     margin-bottom: 10px;
+//   }
