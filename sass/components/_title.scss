@@ -1,3 +1,9 @@
+.hero__title{
+     @include fontStyle(26px, 900, 1.6, 0.06em);
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
 // .title {
 //     color: var(--primary-text-color);
 //     @include fontStyle(14px, 700, 1.14);
