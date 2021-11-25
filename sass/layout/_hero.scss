@@ -16,21 +16,55 @@
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 480px;
-    // height: 400px;
+    height: 400px;
+
+    @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),    
+    url('../images/hero/hero2x.jpg');
+  }
+
+    @media screen and (min-width: 768px) {
+      background-image: linear-gradient(to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+      url('../images/hero/hero-tablet.jpg');
+
+      max-width: 768px;
+
+      @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),    
+    url('../images/hero/hero-tablet2x.jpg');
+  }
+    }
+    @media screen and (min-width: 1200px) {
+      background-image: linear-gradient(to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+      url('../images/hero/hero-desktop.jpg');
+
+      max-width: 1600px;
+      height: 600px;
+
+      @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),    
+    url('../images/hero/hero-desktop2x.jpg');
+  }
+    }
+
 }
 
-@media screen and (min-device-pixel-ratio: 2),
-(-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx){
-      .hero{
-          background-image: linear-gradient(
-            to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)
-          ),url(../images/hero/hero-tablet2x.jpg);
-      }
-  }
 
 
 // .hero {
@@ -53,33 +87,27 @@
 //     background-position: center;
 //   }
   
-// .hero__button {
-//     color: var(--white-color);
-//     padding: 10px 32px;
-//     @include fontStyle(16px, 700, 1.85, 0.06em);
+.hero__button {
+    color: var(--white-color);
+    padding: 10px 32px;
+    @include fontStyle(16px, 700, 1.85, 0.06em);
    
-//     background-color: var(--accent-text-color);
-//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: var(--accent-text-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   
-//     transition-property: color, background-color, box-shadow;
-//     transition-duration: 250ms;
-//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-//     &:hover,
-//     &:focus {
-//     background-color: #188ce8;
-//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-//     border-radius: 4px;
-//   }
-//   }
+    &:hover,
+    &:focus {
+    background-color: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  }
+  }
   
 
   
-// .hero__title {
-//   @include fontStyle(44px, 900, 1.36, 0.06em);
-   
-//     text-transform: uppercase;
-//     text-align: center;
-//     margin-bottom: var(--card-set-gup);
-//   }
+
   

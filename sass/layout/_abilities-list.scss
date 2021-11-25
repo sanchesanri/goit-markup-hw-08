@@ -11,17 +11,22 @@
   
 
   
-// .abilities__box {
+.abilities__box {
     
-//     width: 270px;
-//     height: 120px;
-//     @include centeredFlex ();
+    // width: 270px;
+    height: 120px;
+    @include centeredFlex ();
   
-//     margin-bottom: 30px;
-//     background-color: $fourthBgColor;
-//     border-radius: 4px;
-//   }
+    margin-bottom: 30px;
+    background-color: $fourthBgColor;
+    border-radius: 4px;
+  }
   
-// .abilities__title {
-//     margin-bottom: 10px;
-//   }
+.abilities__title {
+    margin-bottom: 10px;
+  }
+
+.abilities__text{
+    @extend .text;
+    margin-bottom: 30px;
+  }

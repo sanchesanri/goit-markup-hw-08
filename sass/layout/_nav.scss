@@ -8,30 +8,52 @@
 }
 
 // START MENU BURGER
-.menu-button{
-    padding: 0;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    line-height: 0;
-}
-
-.menu-button_icon{
-    width: 40px;
-    height: 40px; 
-}
-
-.menu-button .icon-cross{
-    display: none;
-}
-.menu-button.is-open .icon-cross{
-    display: block;
-}
-
-.menu-button.is-open .icon-menu{
-    display: none;
-}
-
+    .menu-button{
+        padding: 0;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        line-height: 0;
+        &:hover > .menu-button_icon{
+            fill: var(--accent-text-color);
+        } 
+    }
+    
+    .menu-button_icon{
+        width: 40px;
+        height: 40px; 
+    
+    }
+    
+    .menu-button .icon-cross{
+        display: none;
+    }
+    .menu-button.is-open .icon-cross{
+        display: block;
+    }
+    
+    .menu-button.is-open .icon-menu{
+        display: none;
+    }
+    
+    .menu-burger{
+        position: absolute;
+        top: 100%;
+        left: 0;
+    
+        width: 100vw;
+        height: 100vh;
+    
+        padding: 40px 48px;
+        background-color: palevioletred;
+        display: none;
+    
+        .menu-button.is-open {
+            display: block;
+        }
+        
+    }
+    
 .nav__list{
     display: none;
 }
