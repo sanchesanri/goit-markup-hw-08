@@ -41,6 +41,29 @@
             </li>
           </ul>
         </nav>
+
+        <!-- START Mobile Menu -->
+       
+        <button 
+        class="menu-button js-menu-container" 
+        type="button"
+        aria-expanded="false">
+              <svg 
+              class="menu-button_icon"
+              aria-label="Переключатель мобильного меню">
+                <use 
+                class="icon-menu js-open-menu"                
+                href="./images/icons.svg#icon-burger"></use>
+
+                <use 
+                class="icon-cross js-close-menu"                
+                href="./images/icons.svg#icon-closeburger"></use>
+              </svg>
+              </button> 
+        <div class="menu-burger">
+          sadfsdfaf
+        </div>
+        <!-- END Mobile Menu -->
         <ul class="address">
           <li class="address__item">
             <a class="address__link" href="mailto:info@devstudio.com">
@@ -68,31 +91,34 @@
         <div class="container">
           <!-- Спрятать H1 -->
           <h1 class="visually-hidden">Портфолио</h1>
-          <ul class="filter">
-            <li class="filter__list">
-              <button class="button filter__button" type="button">Все</button>
-            </li>
-            <li class="filter__list">
-              <button class="button filter__button" type="button">
-                Веб-сайты
-              </button>
-            </li>
-            <li class="filter__list">
-              <button class="button filter__button" type="button">
-                Приложения
-              </button>
-            </li>
-            <li class="filter__list">
-              <button class="button filter__button" type="button">
-                Дизайн
-              </button>
-            </li>
-            <li class="filter__list">
-              <button class="button filter__button" type="button">
-                Маркетинг
-              </button>
-            </li>
-          </ul>
+
+          <div class="filter-wrapper">
+            <ul class="filter">
+              <li class="filter__list">
+                <button class="button filter__button" type="button">Все</button>
+              </li>
+              <li class="filter__list">
+                <button class="button filter__button" type="button">
+                  Веб-сайты
+                </button>
+              </li>
+              <li class="filter__list">
+                <button class="button filter__button" type="button">
+                  Приложения
+                </button>
+              </li>
+              <li class="filter__list">
+                <button class="button filter__button" type="button">
+                  Дизайн
+                </button>
+              </li>
+              <li class="filter__list">
+                <button class="button filter__button" type="button">
+                  Маркетинг
+                </button>
+              </li>
+            </ul>
+          </div>
 
           <!-- div images -->
 
@@ -101,12 +127,52 @@
               <div class="grid__box">
                 <a href="" class="grid__link">
                   <div class="grid__box2">
-                    <img
+                    <picture>
+                      <source 
+                      media="(min-width: 1200px)" 
+                      srcset="./images/works/works-1-desktop.webp 1x,
+                      ./images/works/works-1-desktop@2x.webp 2x" 
+                      type="image/webp">
+
+                      <source 
+                      media="(min-width: 1200px)" 
+                      srcset="./images/works/works-1-desktop.jpg 1x,
+                      ./images/works/works-1-desktop@2x.jpg 2x" 
+                      type="image/jpg">
+
+                      <source 
+                      media="(min-width: 768px)" 
+                      srcset="./images/works/works-1-tablet.webp 1x,
+                      ./images/works/works-1-tablet@2x.webp 2x" 
+                      type="image/webp">
+
+                      <source 
+                      media="(min-width: 768px)" 
+                      srcset="./images/works/works-1-tablet.jpg 1x,
+                      ./images/works/works-1-tablet@2x.jpg 2x" 
+                      type="image/jpg">
+
+                      <source 
+                      media="(min-width: 480px)" 
+                      srcset="./images/works/works-1.webp 1x,
+                      ./images/works/works-1@2x.webp 2x" 
+                      type="image/webp">
+
+                      <source 
+                      media="(min-width: 480px)" 
+                      srcset="./images/works/works-1.jpg 1x,
+                      ./images/works/works-1@2x.jpg 2x" 
+                      type="image/jpg">
+
+                      <img src="./images/works/works-1.jpg" 
+                      alt="веб-сайт технокряк">
+                    </picture>
+                    <!-- <img
                       src="./images/технокряк.jpg"
                       alt="веб-сайт технокряк"
                       width="370"
                       height="294"
-                    />
+                    /> -->
                     <div class="grid__box3">
                       <p class="text grid__text">
                         Технокряк это современная площадка распространения
@@ -129,12 +195,53 @@
               <div class="grid__box">
                 <a href="" class="grid__link">
                   <div class="grid__box2">
-                    <img
+
+                    <picture>
+                      <source 
+                      media="(min-width: 1200px)" 
+                      srcset="./images/works/works-2-desktop.webp 1x,
+                      ./images/works/works-2-desktop@2x.webp 2x" 
+                      type="image/webp">
+
+                      <source 
+                      media="(min-width: 1200px)" 
+                      srcset="./images/works/works-2-desktop.jpg 1x,
+                      ./images/works/works-2-desktop@2x.jpg 2x" 
+                      type="image/jpg">
+
+                      <source 
+                      media="(min-width: 768px)" 
+                      srcset="./images/works/works-2-tablet.webp 1x,
+                      ./images/works/works-2-tablet@2x.webp 2x" 
+                      type="image/webp">
+
+                      <source 
+                      media="(min-width: 768px)" 
+                      srcset="./images/works/works-2-tablet.jpg 1x,
+                      ./images/works/works-2-tablet@2x.jpg 2x" 
+                      type="image/jpg">
+
+                      <source 
+                      media="(min-width: 480px)" 
+                      srcset="./images/works/works-2.webp 1x,
+                      ./images/works/works-2@2x.webp 2x" 
+                      type="image/webp">
+
+                      <source 
+                      media="(min-width: 480px)" 
+                      srcset="./images/works/works-2.jpg 1x,
+                      ./images/works/works-2@2x.jpg 2x" 
+                      type="image/jpg">
+
+                      <img src="./images/works/works-2.jpg" 
+                      alt="постер баскетбол">
+                    </picture>
+                    <!-- <img
                     src="./images/neworleanovsgoldenstar.jpg"
                     alt="постер баскетбол"
                     width="370"
                     height="294"
-                  />
+                  /> -->
                     <div class="grid__box3">
                       <p class="text grid__text">
                         Я в своем познании настолько преисполнился, что я как будто бы уже сто триллионов миллиардов лет проживаю на триллионах и триллионах таких же планет, как эта Земля, 
@@ -156,12 +263,53 @@
                 <a href="" class="grid__link">
                   
                   <div class="grid__box2">
-                    <img
+
+                    <picture>
+                      <source 
+                      media="(min-width: 1200px)" 
+                      srcset="./images/works/works-3-desktop.webp 1x,
+                      ./images/works/works-3-desktop@2x.webp 2x" 
+                      type="image/webp">
+
+                      <source 
+                      media="(min-width: 1200px)" 
+                      srcset="./images/works/works-3-desktop.jpg 1x,
+                      ./images/works/works-3-desktop@2x.jpg 2x" 
+                      type="image/jpg">
+
+                      <source 
+                      media="(min-width: 768px)" 
+                      srcset="./images/works/works-3-tablet.webp 1x,
+                      ./images/works/works-3-tablet@2x.webp 2x" 
+                      type="image/webp">
+
+                      <source 
+                      media="(min-width: 768px)" 
+                      srcset="./images/works/works-3-tablet.jpg 1x,
+                      ./images/works/works-3-tablet@2x.jpg 2x" 
+                      type="image/jpg">
+
+                      <source 
+                      media="(min-width: 480px)" 
+                      srcset="./images/works/works-3.webp 1x,
+                      ./images/works/works-3@2x.webp 2x" 
+                      type="image/webp">
+
+                      <source 
+                      media="(min-width: 480px)" 
+                      srcset="./images/works/works-3.jpg 1x,
+                      ./images/works/works-3@2x.jpg 2x" 
+                      type="image/jpg">
+
+                      <img src="./images/works/works-3.jpg" 
+                      alt="ресторан Seafood">
+                    </picture>
+                    <!-- <img
                     src="./images/restoranseafood.jpg"
                     alt="ресторан seafood"
                     width="370"
                     height="294"
-                  />
+                  /> -->
                     <div class="grid__box3">
                       <p class="text grid__text">
                         мне этот мир абсолютно понятен, и я здесь ищу только одного - покоя, умиротворения и вот этой гармонии, от слияния с бесконечно вечным, от созерцания великого фрактального подобия и от вот этого замечательного всеединства существа,
@@ -182,12 +330,53 @@
                 <a href="" class="grid__link">
                   
                   <div class="grid__box2">
-                    <img
+
+                    <picture>
+                      <source 
+                      media="(min-width: 1200px)" 
+                      srcset="./images/works/works-4-desktop.webp 1x,
+                      ./images/works/works-4-desktop@2x.webp 2x" 
+                      type="image/webp">
+
+                      <source 
+                      media="(min-width: 1200px)" 
+                      srcset="./images/works/works-4-desktop.jpg 1x,
+                      ./images/works/works-4-desktop@2x.jpg 2x" 
+                      type="image/jpg">
+
+                      <source 
+                      media="(min-width: 768px)" 
+                      srcset="./images/works/works-4-tablet.webp 1x,
+                      ./images/works/works-4-tablet@2x.webp 2x" 
+                      type="image/webp">
+
+                      <source 
+                      media="(min-width: 768px)" 
+                      srcset="./images/works/works-4-tablet.jpg 1x,
+                      ./images/works/works-4-tablet@2x.jpg 2x" 
+                      type="image/jpg">
+
+                      <source 
+                      media="(min-width: 480px)" 
+                      srcset="./images/works/works-4.webp 1x,
+                      ./images/works/works-4@2x.webp 2x" 
+                      type="image/webp">
+
+                      <source 
+                      media="(min-width: 480px)" 
+                      srcset="./images/works/works-4.jpg 1x,
+                      ./images/works/works-4@2x.jpg 2x" 
+                      type="image/jpg">
+
+                      <img src="./images/works/works-4.jpg" 
+                      alt="проект Prime">
+                    </picture>
+                    <!-- <img
                     src="./images/projectprime.jpg"
                     alt="проект Prime"
                     width="370"
                     height="294"
-                  />
+                  /> -->
                     <div class="grid__box3">
                       <p class="text grid__text">
                         бесконечно вечного, куда ни посмотри, хоть вглубь - бесконечно малое, хоть ввысь - бесконечное большое, понимаешь? А ты мне опять со своим вот этим, иди суетись дальше, это твоё распределение, это твой путь и твой горизонт познания и ощущения твоей природы,
@@ -207,12 +396,53 @@
                 <a href="" class="grid__link">
                 
                 <div class="grid__box2">
-                  <img
+
+                  <picture>
+                    <source 
+                    media="(min-width: 1200px)" 
+                    srcset="./images/works/works-5-desktop.webp 1x,
+                    ./images/works/works-5-desktop@2x.webp 2x" 
+                    type="image/webp">
+
+                    <source 
+                    media="(min-width: 1200px)" 
+                    srcset="./images/works/works-5-desktop.jpg 1x,
+                    ./images/works/works-5-desktop@2x.jpg 2x" 
+                    type="image/jpg">
+
+                    <source 
+                    media="(min-width: 768px)" 
+                    srcset="./images/works/works-5-tablet.webp 1x,
+                    ./images/works/works-5-tablet@2x.webp 2x" 
+                    type="image/webp">
+
+                    <source 
+                    media="(min-width: 768px)" 
+                    srcset="./images/works/works-5-tablet.jpg 1x,
+                    ./images/works/works-5-tablet@2x.jpg 2x" 
+                    type="image/jpg">
+
+                    <source 
+                    media="(min-width: 480px)" 
+                    srcset="./images/works/works-5.webp 1x,
+                    ./images/works/works-5@2x.webp 2x" 
+                    type="image/webp">
+
+                    <source 
+                    media="(min-width: 480px)" 
+                    srcset="./images/works/works-5.jpg 1x,
+                    ./images/works/works-5@2x.jpg 2x" 
+                    type="image/jpg">
+
+                    <img src="./images/works/works-5.jpg" 
+                    alt="проект Boxes">
+                  </picture>
+                  <!-- <img
                   src="./images/projectboxes.jpg"
                   alt="проект Boxes"
                   width="370"
                   height="294"
-                />
+                /> -->
                   <div class="grid__box3">
                     <p class="text grid__text">
                       он несоизмеримо мелок по сравнению с моим, понимаешь? Я как будто бы уже давно глубокий старец, бессмертный, ну или там уже почти бессмертный, который на этой планете от её самого зарождения, ещё когда только Солнце только-только сформировалось как звезда,
@@ -232,12 +462,53 @@
                 <a href="" class="grid__link">
                   
                   <div class="grid__box2">
-                    <img
+
+                    <picture>
+                      <source 
+                      media="(min-width: 1200px)" 
+                      srcset="./images/works/works-6-desktop.webp 1x,
+                      ./images/works/works-6-desktop@2x.webp 2x" 
+                      type="image/webp">
+
+                      <source 
+                      media="(min-width: 1200px)" 
+                      srcset="./images/works/works-6-desktop.jpg 1x,
+                      ./images/works/works-6-desktop@2x.jpg 2x" 
+                      type="image/jpg">
+
+                      <source 
+                      media="(min-width: 768px)" 
+                      srcset="./images/works/works-6-tablet.webp 1x,
+                      ./images/works/works-6-tablet@2x.webp 2x" 
+                      type="image/webp">
+
+                      <source 
+                      media="(min-width: 768px)" 
+                      srcset="./images/works/works-6-tablet.jpg 1x,
+                      ./images/works/works-6-tablet@2x.jpg 2x" 
+                      type="image/jpg">
+
+                      <source 
+                      media="(min-width: 480px)" 
+                      srcset="./images/works/works-6.webp 1x,
+                      ./images/works/works-6@2x.webp 2x" 
+                      type="image/webp">
+
+                      <source 
+                      media="(min-width: 480px)" 
+                      srcset="./images/works/works-6.jpg 1x,
+                      ./images/works/works-6@2x.jpg 2x" 
+                      type="image/jpg">
+
+                      <img src="./images/works/works-6.jpg" 
+                      alt="inspiration has no Borders">
+                    </picture>
+                    <!-- <img
                     src="./images/inspirationhasnoborders.jpg"
                     alt="Inspiration has no Borders"
                     width="370"
                     height="294"
-                  />
+                  /> -->
                     <div class="grid__box3">
                       <p class="text grid__text">
                         и вот это газопылевое облако, вот, после взрыва, Солнца, когда оно вспыхнуло, как звезда, начало формировать вот эти коацерваты, планеты, понимаешь, я на этой Земле уже как будто почти пять миллиардов лет живу и знаю её вдоль и поперёк этот весь мир, а ты мне какие-то... 
@@ -258,12 +529,53 @@
                 <a href="" class="grid__link">
                 
                 <div class="grid__box2">
-                  <img
+
+                  <picture>
+                    <source 
+                    media="(min-width: 1200px)" 
+                    srcset="./images/works/works-7-desktop.webp 1x,
+                    ./images/works/works-7-desktop@2x.webp 2x" 
+                    type="image/webp">
+
+                    <source 
+                    media="(min-width: 1200px)" 
+                    srcset="./images/works/works-7-desktop.jpg 1x,
+                    ./images/works/works-7-desktop@2x.jpg 2x" 
+                    type="image/jpg">
+
+                    <source 
+                    media="(min-width: 768px)" 
+                    srcset="./images/works/works-7-tablet.webp 1x,
+                    ./images/works/works-7-tablet@2x.webp 2x" 
+                    type="image/webp">
+
+                    <source 
+                    media="(min-width: 768px)" 
+                    srcset="./images/works/works-7-tablet.jpg 1x,
+                    ./images/works/works-7-tablet@2x.jpg 2x" 
+                    type="image/jpg">
+
+                    <source 
+                    media="(min-width: 480px)" 
+                    srcset="./images/works/works-7.webp 1x,
+                    ./images/works/works-7@2x.webp 2x" 
+                    type="image/webp">
+
+                    <source 
+                    media="(min-width: 480px)" 
+                    srcset="./images/works/works-7.jpg 1x,
+                    ./images/works/works-7@2x.jpg 2x" 
+                    type="image/jpg">
+
+                    <img src="./images/works/works-7.jpg" 
+                    alt="издание limited edition">
+                  </picture>
+                  <!-- <img
                   src="./images/editionlimitededition.jpg"
                   alt="издание limited edition"
                   width="370"
                   height="294"
-                />
+                /> -->
                   <div class="grid__box3">
                     <p class="text grid__text">
                       мне не важно на твои тачки, на твои яхты, на твои квартиры, там, на твоё благо. Я был на этой планете бесконечным множеством, и круче Цезаря, и круче Гитлера, и круче всех великих, понимаешь, был, а где-то был конченым говном, ещё хуже,чем здесь. 
@@ -284,12 +596,53 @@
                 <a href="" class="grid__link">
                 
                 <div class="grid__box2">
-                  <img
+
+                  <picture>
+                    <source 
+                    media="(min-width: 1200px)" 
+                    srcset="./images/works/works-8-desktop.webp 1x,
+                    ./images/works/works-8-desktop@2x.webp 2x" 
+                    type="image/webp">
+
+                    <source 
+                    media="(min-width: 1200px)" 
+                    srcset="./images/works/works-8-desktop.jpg 1x,
+                    ./images/works/works-8-desktop@2x.jpg 2x" 
+                    type="image/jpg">
+
+                    <source 
+                    media="(min-width: 768px)" 
+                    srcset="./images/works/works-8-tablet.webp 1x,
+                    ./images/works/works-8-tablet@2x.webp 2x" 
+                    type="image/webp">
+
+                    <source 
+                    media="(min-width: 768px)" 
+                    srcset="./images/works/works-8-tablet.jpg 1x,
+                    ./images/works/works-8-tablet@2x.jpg 2x" 
+                    type="image/jpg">
+
+                    <source 
+                    media="(min-width: 480px)" 
+                    srcset="./images/works/works-8.webp 1x,
+                    ./images/works/works-8@2x.webp 2x" 
+                    type="image/webp">
+
+                    <source 
+                    media="(min-width: 480px)" 
+                    srcset="./images/works/works-8.jpg 1x,
+                    ./images/works/works-8@2x.jpg 2x" 
+                    type="image/jpg">
+
+                    <img src="./images/works/works-8.jpg" 
+                    alt="постер LAB">
+                  </picture>
+                  <!-- <img
                   src="./images/projectlab.jpg"
                   alt="проект LAB"
                   width="370"
                   height="294"
-                />
+                /> -->
                   <div class="grid__box3">
                     <p class="text grid__text">
                       Я множество этих состояний чувствую. Где-то я был больше подобен растению, где-то я больше был подобен птице, там, червю, где-то был просто сгусток камня, это всё есть душа, понимаешь?
@@ -310,12 +663,53 @@
                 <a href="" class="grid__link">
                 
                 <div class="grid__box2">
-                  <img
+
+                  <picture>
+                    <source 
+                    media="(min-width: 1200px)" 
+                    srcset="./images/works/works-9-desktop.webp 1x,
+                    ./images/works/works-9-desktop@2x.webp 2x" 
+                    type="image/webp">
+
+                    <source 
+                    media="(min-width: 1200px)" 
+                    srcset="./images/works/works-9-desktop.jpg 1x,
+                    ./images/works/works-9-desktop@2x.jpg 2x" 
+                    type="image/jpg">
+
+                    <source 
+                    media="(min-width: 768px)" 
+                    srcset="./images/works/works-9-tablet.webp 1x,
+                    ./images/works/works-9-tablet@2x.webp 2x" 
+                    type="image/webp">
+
+                    <source 
+                    media="(min-width: 768px)" 
+                    srcset="./images/works/works-9-tablet.jpg 1x,
+                    ./images/works/works-9-tablet@2x.jpg 2x" 
+                    type="image/jpg">
+
+                    <source 
+                    media="(min-width: 480px)" 
+                    srcset="./images/works/works-9.webp 1x,
+                    ./images/works/works-9@2x.webp 2x" 
+                    type="image/webp">
+
+                    <source 
+                    media="(min-width: 480px)" 
+                    srcset="./images/works/works-9.jpg 1x,
+                    ./images/works/works-9@2x.jpg 2x" 
+                    type="image/jpg">
+
+                    <img src="./images/works/works-9.jpg" 
+                    alt="groving Business">
+                  </picture>
+                  <!-- <img
                   src="./images/growingbusiness.jpg"
                   alt="groving businnes"
                   width="370"
                   height="294"
-                />
+                /> -->
                   <div class="grid__box3">
                     <p class="text grid__text">
                       Она имеет грани подобия совершенно многообразные, бесконечное множество. Но тебе этого не понять, поэтому ты езжай себе , мы в этом мире как бы живем разными ощущениями и разными стремлениями, соответственно, разное наше и место, разное и наше распределение.
@@ -343,23 +737,24 @@
             ><span>Web</span>Studio</a
           >
           <address class="footer-address">
-            <ul class="footer__list">
+            <ul class="footer">
               <li class="footer__item">
                 г. Киев, пр-т Леси Украинки, 26
               </li>
               <li class="footer__item">
-                <a href="mailto:info@example.com" class="link"
+                <a href="mailto:info@example.com" class="footer__link"
                   >info@example.com</a
                 >
               </li>
               <li class="footer__item">
-                <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
+                <a href="tel:+380991111111" class="footer__link">+38 099 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
         <div class="footer__box-social">
           <h2 class="title footer__title">Присоединяйтесь</h2>
+         <div class="footer__social-box">
           <ul class="footer__social-list">
             <li class="footer__social-item">
               <a href="https://www.instagram.com/" class="footer__social-link">
@@ -413,6 +808,7 @@
               </a>
             </li>
           </ul>
+         </div>
         </div>
         
         <div class="footer-wrapper-form">
