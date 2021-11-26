@@ -330,7 +330,7 @@ address {
   letter-spacing: 0.03em;
 }
 
-.footer__item:not(:last-child) {
+.footer-list__item:not(:last-child) {
   margin-bottom: 9px;
 }
 

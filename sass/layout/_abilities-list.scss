@@ -1,25 +1,41 @@
-// .abilities {
-//     display: flex;
-//   }
-// .abilities__item {
-//     width: 270px;
+.abilities {
+    @media screen and (min-width: 768px){
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+    @media screen and (min-width: 1200px){
+      flex-wrap: nowrap;
+      margin: 0;
+  }
+} 
+.abilities__item {
+    @media screen and (min-width: 768px){
+    flex-basis: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+    width: 270px;
+    }
 
+    @media screen and (min-width: 1200px){
+      margin: 0;
+      
+    &:not(:last-child) {
+      margin-right: $cardSetGup;
+     }
+    }
+  }
 //     &:not(:last-child) {
 //       margin-right: $cardSetGup;
 //     }
-//   }
-  
-
-  
+//   }  
 .abilities__box {
     
     // width: 270px;
     height: 120px;
     @include centeredFlex ();
-  
-    margin-bottom: 30px;
     background-color: $fourthBgColor;
     border-radius: 4px;
+    margin-bottom: 30px;
   }
   
 .abilities__title {
@@ -28,5 +44,6 @@
 
 .abilities__text{
     @extend .text;
-    margin-bottom: 30px;
+    @media screen and (max-width: 767px){
+    margin-bottom: 30px;}
   }
