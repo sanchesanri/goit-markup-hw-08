@@ -47,25 +47,45 @@
 
 
         <!-- START Mobile Menu -->
-       
-          <button 
-        class="menu-button js-menu-container" 
-        type="button"
-        aria-expanded="false">
-              <svg 
-              class="menu-button_icon"
-              aria-label="Переключатель мобильного меню">
-                <use 
-                class="icon-menu js-open-menu"                
-                href="./images/icons.svg#icon-burger"></use>
 
-                <use 
-                class="icon-cross js-close-menu"                
-                href="./images/icons.svg#icon-closeburger"></use>
-              </svg>
-              </button> 
-        <div class="menu-burger">
-          sadfsdfaf
+        <button 
+          class="button-mobile_open js-open-menu" 
+          type="button">
+            <svg class="mobile-open__icon">
+              <use 
+              class="icon-open" 
+              href="./images/icons.svg#icon-burger">
+            </use>
+            </svg>
+        </button>
+
+        <div class="mobile-menu js-menu-container">
+          <button 
+          class="button-mobile_close js-close-menu" 
+          type="button">
+            <svg class="mobile-close__icon">
+              <use 
+              class="icon-close" 
+              href="./images/icons.svg#icon-closeburger">
+            </use>
+            </svg>
+        </button>
+
+        <ul class="mobile__list">
+          <li class="mobile__item">
+            <a href="./index.html" class="link mobile__link--current mobile__link"
+              >Студия</a
+            >
+          </li>
+          <li class="mobile__item">
+            <a href="./portfolio.html" class="link mobile__link"
+              >Портфолио</a
+            >
+          </li>
+          <li class="mobile__item">
+            <a href="#" class="link mobile__link">Контакты</a>
+          </li>
+        </ul>
         </div>
         <!-- END Mobile Menu -->
 

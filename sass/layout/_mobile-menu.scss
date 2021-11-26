@@ -1,0 +1,99 @@
+// START MOBILE MENU
+%button-menu{
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+
+    padding: 0;
+    line-height: 0;
+    
+    &:hover, 
+    &:focus > .mobile-open__icon{
+                fill: var(--accent-text-color);
+     } 
+}
+
+.button-mobile_open{
+    @extend %button-menu;
+
+    @media screen  and (min-width: 768px) {
+        display: none;
+    }
+}
+
+
+
+.mobile-open__icon,
+.mobile-close__icon{
+    width: 40px;
+    height: 40px;
+}
+
+// Позиционирование и скрытие меню
+.mobile-menu {
+    position: fixed;
+    z-index: 100;
+
+    top: 0;
+    left: 0;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    
+
+    width: 100vw;
+    height: 100vh;
+
+    padding: 32px 25px;
+
+    background-color: var(--white-color);
+    box-shadow: 
+    0px 4px 8px rgba(0, 0, 0, 0.04), 
+    0px 2px 4px rgba(0, 0, 0, 0.08), 
+    0px 1px 3px rgba(0, 0, 0, 0.16);
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-mobile_close{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    @extend %button-menu;
+
+}
+
+.mobile-menu .button-mobile_close{
+    display: none;
+}
+
+.mobile-menu.is-open{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+
+    & .button-mobile_close{
+        display: block;}
+
+    & .button-mobile_open{
+        display: none;
+    }    
+}
+
+.mobile__item {
+    @include fontStyle(40px, 500, 1.17, 0.02em);
+
+    &:not(:last-child){
+        margin-bottom: 32px;
+    }
+}
+
+.mobile__link {
+    color: var(--primary-text-color);
+}
+
+.mobile__link--current {
+    color: var(--accent-text-color);
+}
+

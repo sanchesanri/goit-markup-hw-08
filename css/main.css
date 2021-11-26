@@ -236,50 +236,6 @@ span {
   color: var(--primary-text-color);
 }
 
-.menu-button {
-  padding: 0;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  line-height: 0;
-}
-
-.menu-button:hover > .menu-button_icon {
-  fill: var(--accent-text-color);
-}
-
-.menu-button_icon {
-  width: 40px;
-  height: 40px;
-}
-
-.menu-button .icon-cross {
-  display: none;
-}
-
-.menu-button.is-open .icon-cross {
-  display: block;
-}
-
-.menu-button.is-open .icon-menu {
-  display: none;
-}
-
-.menu-burger {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  padding: 40px 48px;
-  background-color: palevioletred;
-  display: none;
-}
-
-.menu-burger .menu-button.is-open {
-  display: block;
-}
-
 .nav__list {
   display: none;
 }
@@ -1025,5 +981,90 @@ span {
 .user-chois__text {
   font-size: 16px;
   line-height: calc(30 / 16);
+}
+
+.button-mobile_open, .button-mobile_close {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  line-height: 0;
+}
+
+.button-mobile_open:hover, .button-mobile_close:hover,
+.button-mobile_open:focus > .mobile-open__icon,
+.button-mobile_close:focus > .mobile-open__icon {
+  fill: var(--accent-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .button-mobile_open {
+    display: none;
+  }
+}
+
+.mobile-open__icon,
+.mobile-close__icon {
+  width: 40px;
+  height: 40px;
+}
+
+.mobile-menu {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px 25px;
+  background-color: var(--white-color);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-mobile_close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+.mobile-menu .button-mobile_close {
+  display: none;
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
+.mobile-menu.is-open .button-mobile_close {
+  display: block;
+}
+
+.mobile-menu.is-open .button-mobile_open {
+  display: none;
+}
+
+.mobile__item {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+
+.mobile__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile__link {
+  color: var(--primary-text-color);
+}
+
+.mobile__link--current {
+  color: var(--accent-text-color);
 }
 /*# sourceMappingURL=main.css.map */
