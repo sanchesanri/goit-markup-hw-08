@@ -2,11 +2,16 @@
     // display: flex;
     color: rgba(255, 255, 255, 0.6);
     background-color: var(--third-bg-color);
-  }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
+}
   
-// .footer-form__label{
-//     margin-right: 12px;
-//   }
+.footer-form__label{
+  @media screen and (min-width: 1200px){
+  margin-right: 12px;}
+  }
   
 .footer-form__input{
     // width: 358px;
@@ -38,6 +43,7 @@
 
     @media screen and (min-width: 1200px) {
         width: 358px;
+        margin-bottom: 0;
     }
   }
   
