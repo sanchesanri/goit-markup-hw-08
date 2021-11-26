@@ -1010,6 +1010,9 @@ span {
 }
 
 .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: fixed;
   z-index: 100;
   top: 0;
@@ -1062,9 +1065,68 @@ span {
 
 .mobile__link {
   color: var(--primary-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mobile__link--current {
+.mobile__link:hover, .mobile__link:focus {
   color: var(--accent-text-color);
+}
+
+.address-menu__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.address-menu__item:nth-child(1) {
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--accent-text-color);
+}
+
+.address-menu__item:nth-child(2) {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+
+.address-menu__link {
+  color: currentColor;
+}
+
+.address-menu-wrapper {
+  margin-bottom: 64px;
+}
+
+.social-menu {
+  display: flex;
+}
+
+.social-menu__item {
+  display: flex;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--accent-text-color);
+}
+
+.social-menu__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-menu__item:not(:last-child):after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 22px;
+  background-color: rgba(33, 33, 33, 0.2);
+  margin-left: 10px;
+}
+
+.social-menu__link {
+  color: currentColor;
 }
 /*# sourceMappingURL=main.css.map */

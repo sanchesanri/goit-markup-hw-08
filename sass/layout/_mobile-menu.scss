@@ -31,6 +31,11 @@
 
 // Позиционирование и скрытие меню
 .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+// Позицтрнирование контента внутри
+
     position: fixed;
     z-index: 100;
 
@@ -41,7 +46,7 @@
     visibility: hidden;
     pointer-events: none;
     
-
+// max-width: 767px;
     width: 100vw;
     height: 100vh;
 
@@ -81,6 +86,10 @@
     }    
 }
 
+// Внутрянка mobile-menu
+
+
+
 .mobile__item {
     @include fontStyle(40px, 500, 1.17, 0.02em);
 
@@ -91,9 +100,64 @@
 
 .mobile__link {
     color: var(--primary-text-color);
+    
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus{
+        color:var(--accent-text-color);
+    }
 }
 
-.mobile__link--current {
-    color: var(--accent-text-color);
+
+.address-menu__item{
+
+    &:not(:last-child){
+        margin-bottom: 32px;
+    }
+
+    &:nth-child(1) {
+        @include fontStyle(34px, 500, 1.17, 0.02em);
+        color:var(--accent-text-color);}
+
+    &:nth-child(2){
+        @include fontStyle(24px, 500, 1.16, 0.02em);
+    color: var(--secondary-text-color);
+    }
+}
+.address-menu__link{
+    color: currentColor;
+}
+
+.address-menu-wrapper{
+    margin-bottom: 64px;
+}
+
+// Social-menu
+
+.social-menu {
+    display: flex;
+}
+.social-menu__item {
+    display: flex;
+    @include fontStyle(18px, 500, 1.2, 0.02em);
+    color:var(--accent-text-color);
+    
+    &:not(:last-child){
+        margin-right: 10px;
+    }
+}
+
+.social-menu__item:not(:last-child):after{
+    content: '';
+    display: block;
+    width: 1px;
+    height: 22px;
+    background-color: rgba(33, 33, 33, 0.2);
+    margin-left: 10px;
+
+}
+.social-menu__link {
+    color: currentColor;
 }
 
