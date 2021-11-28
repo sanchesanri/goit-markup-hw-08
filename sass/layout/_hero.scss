@@ -1,7 +1,7 @@
 
 .hero{
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
     margin-left: auto;
     margin-right: auto;
     color: var(--white-color);
@@ -17,8 +17,13 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    max-width: 480px;
-    height: 400px;
+    max-width: 1600px;
+    // height: 400px;
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 200px;
+      padding-bottom: 200px;
+    }
 
     @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -35,8 +40,6 @@
       rgba(47, 48, 58, 0.4)),
       url('../images/hero/hero-tablet.jpg');
 
-      max-width: 768px;
-
       @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
@@ -52,7 +55,6 @@
       rgba(47, 48, 58, 0.4)),
       url('../images/hero/hero-desktop.jpg');
 
-      max-width: 1600px;
       height: 600px;
 
       @media (min-device-pixel-ratio: 2),

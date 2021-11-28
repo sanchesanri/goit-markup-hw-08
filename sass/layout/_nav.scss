@@ -1,10 +1,13 @@
+.nav {
+  display: flex;
+  align-items: center;
+}
+
 .nav__logo {
     @include fontStyle(24px, 700, 1.16);
     font-family: Raleway;
     color: var(--primary-text-color);
-
 }
-
 
 .nav__list{
     display: none;
@@ -52,6 +55,7 @@
     }
   }
 }
+
 .nav__list {
     @media screen and (min-width: 768px){
     display: flex;
@@ -67,12 +71,7 @@
     margin-right: 93px;
   }
 } 
-.nav {
-    display: flex;
-    align-items: center;
-  }
-  
-  
+ 
 .icon-nav {
     padding: 0;
     margin-right: 10px;

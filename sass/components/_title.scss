@@ -2,6 +2,10 @@
      @include fontStyle(26px, 900, 1.6, 0.06em);
     text-transform: uppercase;
     margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+      @include fontStyle(44px, 900, 1.36)
+    }
 }
 
 // .hero__title {
@@ -42,5 +46,9 @@
   @include fontStyle(28px, 700, 1.17);
   text-align: center;
   margin-bottom: var(--card-set-gup);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+  }
 }
 
